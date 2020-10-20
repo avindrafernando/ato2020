@@ -1,0 +1,2929 @@
+<!DOCTYPE html>
+<html class="sl-root decks export offline loaded">
+  <head>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui"
+    />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>End to End Testing with Cypress(16:9) - ATO 2020</title>
+
+    <meta name="description" content="Avindra Fernando ATO talk" />
+
+    <link rel="stylesheet" type="text/css" href="lib/offline-v2.css" />
+  </head>
+  <body class="reveal-viewport theme-font-montserrat theme-color-silver-blue">
+    <div class="reveal">
+      <div class="slides">
+        <section data-id="475e8d8d289bf81fe18b13e631d460c6">
+          <div
+            class="sl-block"
+            data-block-type="text"
+            style="width: 806px; left: 237px; top: 263px; height: auto"
+            data-block-id="7599e5e4f9a769d3ebbe3a24fa014915"
+          >
+            <div
+              class="sl-block-content"
+              data-placeholder-tag="h1"
+              data-placeholder-text="Title Text"
+              style="z-index: 10"
+            >
+              <h1>End to End Testing with Cypress</h1>
+            </div>
+          </div>
+          <div
+            class="sl-block"
+            data-block-type="text"
+            style="width: 375px; left: 895px; top: 661px; height: auto"
+            data-block-id="9ea62e3db134bc5f3199cdb9d2b3ac78"
+          >
+            <div
+              class="sl-block-content"
+              data-placeholder-tag="h2"
+              data-placeholder-text="Subtitle"
+              style="z-index: 11"
+            >
+              <h3><span style="font-size: 1em">@avindrafernando</span></h3>
+            </div>
+          </div>
+        </section>
+        <section data-id="a3db03aca5c4d174285814bc0782aa1e">
+          <div
+            class="sl-block"
+            data-block-type="image"
+            data-block-id="8b47c66f5fc0a703682b8bef48c7faef"
+            style="
+              width: 960px;
+              height: 720px;
+              left: 160px;
+              top: 0px;
+              min-width: 1px;
+              min-height: 1px;
+            "
+          >
+            <div class="sl-block-content" style="z-index: 10">
+              <img
+                data-natural-width="1920"
+                data-natural-height="1440"
+                style=""
+                data-lazy-loaded=""
+                data-src="end-to-end-testing-with-cypress/7f6d5124b59b0ec371a06a0c37d689d0"
+              />
+            </div>
+          </div>
+        </section>
+        <section data-id="d0ad148680d8b38fb52347da4c98ef8f">
+          <div
+            class="sl-block"
+            data-block-type="image"
+            data-block-id="507192b2293adb90eb9c4f62b12b264f"
+            style="
+              width: 1080px;
+              height: 720px;
+              left: 100px;
+              top: 0px;
+              min-width: 1px;
+              min-height: 1px;
+            "
+          >
+            <div class="sl-block-content" style="z-index: 10">
+              <img
+                data-natural-width="1920"
+                data-natural-height="1280"
+                style=""
+                data-lazy-loaded=""
+                data-src="end-to-end-testing-with-cypress/98a1f04b5fbf5b7f5ea1424502bc15b1"
+              />
+            </div>
+          </div>
+        </section>
+        <section data-id="2118466705d2d33c70c0961347d6ea4d">
+          <div
+            class="sl-block"
+            data-block-type="image"
+            data-block-id="fe251a6c70ea399a38adf12449bfb8db"
+            style="
+              width: 1080px;
+              height: 720px;
+              left: 100px;
+              top: 0px;
+              min-width: 1px;
+              min-height: 1px;
+            "
+          >
+            <div class="sl-block-content" style="z-index: 10">
+              <img
+                style=""
+                data-natural-width="1920"
+                data-natural-height="1280"
+                data-lazy-loaded=""
+                data-src="end-to-end-testing-with-cypress/59b27abcc7315dcc2be530a1ed0d6282"
+              />
+            </div>
+          </div>
+        </section>
+        <section data-id="67f01edf1578d42c56cea6ae6e083f8d">
+          <div
+            class="sl-block"
+            data-block-type="image"
+            data-block-id="105014671329658b9e927c68aeba0ca4"
+            style="
+              width: 1086.79px;
+              height: 720px;
+              left: 96.605px;
+              top: 0px;
+              min-width: 1px;
+              min-height: 1px;
+            "
+          >
+            <div class="sl-block-content" style="z-index: 10">
+              <img
+                data-natural-width="1920"
+                data-natural-height="1272"
+                style=""
+                data-lazy-loaded=""
+                data-src="end-to-end-testing-with-cypress/4093a8df827b57457ec69246588df13c"
+              />
+            </div>
+          </div>
+        </section>
+        <section data-id="faf6b1ca756f800b0199c5adec44e58c">
+          <div
+            class="sl-block"
+            data-block-type="image"
+            data-block-id="3475fdbf8991ba301ac1976ddaac1265"
+            style="
+              width: 960.667px;
+              height: 720px;
+              left: 159.333px;
+              top: 0px;
+              min-width: 1px;
+              min-height: 1px;
+            "
+          >
+            <div class="sl-block-content" style="z-index: 10">
+              <img
+                style=""
+                data-natural-width="1920"
+                data-natural-height="1439"
+                data-lazy-loaded=""
+                data-src="end-to-end-testing-with-cypress/da0df73f1032f4d172e03811b29a0c24"
+              />
+            </div>
+          </div>
+        </section>
+        <section data-id="23032a19d3ce6c0f497380c31918a776">
+          <div
+            class="sl-block"
+            data-block-type="image"
+            data-block-id="5ff85034257e98f4f026636fabb924b6"
+            style="
+              width: 247px;
+              height: 480px;
+              left: 516.5px;
+              top: 120px;
+              min-width: 1px;
+              min-height: 1px;
+            "
+          >
+            <div class="sl-block-content" style="z-index: 10">
+              <img
+                data-natural-width="247"
+                data-natural-height="480"
+                style=""
+                data-lazy-loaded=""
+                data-src="end-to-end-testing-with-cypress/80dc92046bafe9ce9424e8d36c02b75c.gif"
+              />
+            </div>
+          </div>
+        </section>
+        <section data-id="9aaffb68c8b903d508c341720f3c21ef">
+          <div
+            class="sl-block"
+            data-block-type="image"
+            data-block-id="aac51f6a6c1ed0cee91b366192f0baa6"
+            style="
+              width: 1077.47px;
+              height: 720px;
+              left: 101.265px;
+              top: 0px;
+              min-width: 1px;
+              min-height: 1px;
+            "
+          >
+            <div class="sl-block-content" style="z-index: 10">
+              <img
+                data-natural-width="1920"
+                data-natural-height="1283"
+                style=""
+                data-lazy-loaded=""
+                data-src="end-to-end-testing-with-cypress/fc6f03ec28e4e7a2f7ae64ff29d1b938"
+              />
+            </div>
+          </div>
+        </section>
+        <section data-id="4e48630af62a613cd30a379ced0f4e27">
+          <div
+            class="sl-block"
+            data-block-type="text"
+            style="width: 883px; left: 198.5px; top: 53px; height: auto"
+            data-block-id="4d7b79194d210008222b500643a74c44"
+          >
+            <div
+              class="sl-block-content"
+              data-placeholder-tag="h1"
+              data-placeholder-text="Title Text"
+              style="z-index: 10"
+            >
+              <h1>The Testing Pyramid 🔺</h1>
+            </div>
+          </div>
+          <div
+            class="sl-block"
+            data-block-type="image"
+            style="
+              width: 624px;
+              height: 460px;
+              left: 328px;
+              top: 180px;
+              min-width: 1px;
+              min-height: 1px;
+            "
+            data-block-id="15d5448b9c6f390de197d6f9a22eac8d"
+          >
+            <div class="sl-block-content" style="z-index: 11">
+              <img
+                data-natural-width="1451"
+                data-natural-height="1069"
+                style=""
+                data-lazy-loaded=""
+                data-src="end-to-end-testing-with-cypress/ea479529809a266481f60ef950dcce97.png"
+              />
+            </div>
+          </div>
+          <div
+            class="sl-block"
+            data-block-type="text"
+            style="height: auto; width: 274px; left: 505px; top: 680px"
+            data-block-id="b6dfa6f71fdc5c36213f982d11dfae30"
+          >
+            <div
+              class="sl-block-content"
+              data-placeholder-tag="p"
+              data-placeholder-text="Text"
+              style="z-index: 12; font-size: 35%"
+            >
+              <p>
+                <span style="font-size: 1em"
+                  ><a
+                    href="https://medium.com/@timothy.cochran/test-pyramid-the-key-to-good-automated-test-strategy-9f3d7e3c02d5"
+                    target="_blank"
+                    >Test Pyramid: the key to good automated test strategy</a
+                  ></span
+                >
+              </p>
+            </div>
+          </div>
+        </section>
+        <section data-id="de5a936f0db17a2da28048f6d1c230d8">
+          <div
+            class="sl-block"
+            data-block-type="image"
+            data-block-id="22b3e24d2c9584699c456936d8b3aaef"
+            style="
+              width: 444px;
+              height: 444px;
+              left: 418px;
+              top: 138px;
+              min-width: 1px;
+              min-height: 1px;
+            "
+          >
+            <div class="sl-block-content" style="z-index: 10">
+              <img
+                data-natural-width="444"
+                data-natural-height="444"
+                style=""
+                data-lazy-loaded=""
+                data-src="end-to-end-testing-with-cypress/22826c0f542e8bc716f952a66f847e11.gif"
+              />
+            </div>
+          </div>
+        </section>
+        <section data-id="663129088df8b03c5592331c32214493">
+          <div
+            class="sl-block"
+            data-block-type="image"
+            data-block-id="5c777ea992cfb0cfcff7dc764382c332"
+            style="
+              width: 480px;
+              height: 480px;
+              left: 400px;
+              top: 120px;
+              min-width: 1px;
+              min-height: 1px;
+            "
+          >
+            <div class="sl-block-content" style="z-index: 10">
+              <img
+                style=""
+                data-natural-width="480"
+                data-natural-height="480"
+                data-lazy-loaded=""
+                data-src="end-to-end-testing-with-cypress/66019d6431ba01ed1b2dbeaa621cfbba.gif"
+              />
+            </div>
+          </div>
+        </section>
+        <section data-id="85af577cdd290f776929620665bdeea6">
+          <div
+            class="sl-block"
+            data-block-type="image"
+            data-block-id="a9a293094692c3fb8d4374b80c6e6e34"
+            style="
+              width: 480px;
+              height: 480px;
+              left: 400px;
+              top: 120px;
+              min-width: 1px;
+              min-height: 1px;
+            "
+          >
+            <div class="sl-block-content" style="z-index: 10">
+              <img
+                data-natural-width="480"
+                data-natural-height="480"
+                style=""
+                data-lazy-loaded=""
+                data-src="end-to-end-testing-with-cypress/033a058e067a29b05d05de0fe342ba38.gif"
+              />
+            </div>
+          </div>
+          <div
+            class="sl-block"
+            data-block-type="image"
+            data-block-id="1fe803bac9419124236c53e184cd744f"
+            style="
+              width: 960px;
+              height: 720px;
+              left: 160px;
+              top: 0px;
+              min-width: 1px;
+              min-height: 1px;
+            "
+          >
+            <div class="sl-block-content" style="z-index: 11">
+              <img
+                style=""
+                data-natural-width="1920"
+                data-natural-height="1440"
+                data-lazy-loaded=""
+                data-src="end-to-end-testing-with-cypress/2b3c0aa119ab7cd3297739aa826912f0"
+              />
+            </div>
+          </div>
+        </section>
+        <section data-id="8f415af9e92a42647de5cff59d06046b">
+          <div
+            class="sl-block"
+            data-block-type="text"
+            style="width: 806px; left: 238px; top: 102px; height: auto"
+            data-block-id="9f9b46ff616e2ffd621f74ece998fcd9"
+          >
+            <div
+              class="sl-block-content"
+              data-placeholder-tag="h1"
+              data-placeholder-text="Title Text"
+              style="z-index: 10"
+            >
+              <h1>Who Am I?</h1>
+            </div>
+          </div>
+          <div
+            class="sl-block"
+            data-block-type="text"
+            style="width: 386px; left: 508px; top: 325px; height: auto"
+            data-block-id="4da37bad2c9330ff2f388e4c16b15923"
+          >
+            <div
+              class="sl-block-content"
+              data-placeholder-tag="h2"
+              data-placeholder-text="Subtitle"
+              style="z-index: 11"
+            >
+              <h3>@avindrafernando</h3>
+            </div>
+          </div>
+          <div
+            class="sl-block"
+            data-block-type="image"
+            style="
+              width: 119px;
+              height: 119px;
+              left: 389px;
+              top: 290px;
+              min-width: 1px;
+              min-height: 1px;
+            "
+            data-block-id="58dd8eb5ef299767ac0e35b4b5e29123"
+          >
+            <a
+              class="sl-block-content"
+              style="z-index: 12"
+              href="https://twitter.com/avindrafernando"
+              target="_blank"
+              ><img
+                style=""
+                data-natural-width="1280"
+                data-natural-height="1280"
+                data-lazy-loaded=""
+                data-src="end-to-end-testing-with-cypress/ed2f8716dbdf5955215a2c1f7ffafe1b.png"
+            /></a>
+          </div>
+          <div
+            class="sl-block"
+            data-block-type="image"
+            style="
+              width: 69px;
+              height: 69px;
+              left: 414px;
+              top: 404px;
+              min-width: 1px;
+              min-height: 1px;
+            "
+            data-block-id="ef89079cf121dff439ec64f9a6b59bf0"
+          >
+            <a
+              class="sl-block-content"
+              style="z-index: 13"
+              href="https://medium.com/@avindra1"
+              target="_blank"
+              ><img
+                data-natural-width="195"
+                data-natural-height="195"
+                style=""
+                data-lazy-loaded=""
+                data-src="end-to-end-testing-with-cypress/cb272a02f021906dabf97685844104d7.png"
+            /></a>
+          </div>
+          <div
+            class="sl-block"
+            data-block-type="text"
+            style="width: 232px; left: 508px; top: 414px; height: auto"
+            data-block-id="63bcdf319197961bd72925cf12efcfe4"
+          >
+            <div
+              class="sl-block-content"
+              data-placeholder-tag="h2"
+              data-placeholder-text="Subtitle"
+              style="z-index: 14"
+            >
+              <h3>@avindra1</h3>
+            </div>
+          </div>
+          <div
+            class="sl-block"
+            data-block-type="image"
+            style="
+              width: 77px;
+              height: 77px;
+              left: 406px;
+              top: 494px;
+              min-width: 1px;
+              min-height: 1px;
+            "
+            data-block-id="cd9d5c3e66b5add1db448d01fa87cd74"
+          >
+            <a
+              class="sl-block-content"
+              style="z-index: 15"
+              href="https://github.com/avindrafernando"
+              target="_blank"
+              ><img
+                style=""
+                data-natural-width="1280"
+                data-natural-height="1280"
+                data-lazy-loaded=""
+                data-src="end-to-end-testing-with-cypress/4a52bc7ba0cb349e47ec409288a8f80e.png"
+            /></a>
+          </div>
+          <div
+            class="sl-block"
+            data-block-type="text"
+            style="width: 370px; left: 508px; top: 507px; height: auto"
+            data-block-id="c72e63f46d65c2a6b98023c1c5533576"
+          >
+            <div
+              class="sl-block-content"
+              data-placeholder-tag="h2"
+              data-placeholder-text="Subtitle"
+              style="z-index: 16"
+            >
+              <h3>avindrafernando</h3>
+            </div>
+          </div>
+        </section>
+        <section data-id="59024e52a490ed77b73980419e7b59e9">
+          <div
+            class="sl-block"
+            data-block-type="text"
+            data-block-id="4456d168c896658648a7252561541728"
+            style="height: auto; width: 960px; left: 160px; top: 43px"
+          >
+            <div
+              class="sl-block-content"
+              data-placeholder-tag="p"
+              data-placeholder-text="Text"
+              style="z-index: 10"
+            >
+              <h2>E2E Testing can be challenging</h2>
+            </div>
+          </div>
+          <div
+            class="sl-block"
+            data-block-type="image"
+            data-block-id="4348d0d11b37d505dd0b1ec54b43dc62"
+            style="
+              width: 797.347px;
+              height: 576px;
+              left: 241.327px;
+              top: 144px;
+              min-width: 1px;
+              min-height: 1px;
+            "
+          >
+            <div class="sl-block-content" style="z-index: 11">
+              <img
+                style=""
+                data-natural-width="1920"
+                data-natural-height="1387"
+                data-lazy-loaded=""
+                data-src="end-to-end-testing-with-cypress/8b040acca79d7a7356c1035f458c844b"
+              />
+            </div>
+          </div>
+        </section>
+        <section data-id="5959dff2e13d87c131da66238383c106">
+          <div
+            class="sl-block"
+            data-block-type="text"
+            data-block-id="2dc87f399dd0efdcc5b0906562d9d88a"
+            style="height: auto; width: 320px; left: 160px; top: 570px"
+          >
+            <div
+              class="sl-block-content fragment fade-in-then-semi-out"
+              data-placeholder-tag="p"
+              data-placeholder-text="Text"
+              style="z-index: 10"
+              data-fragment-index="0"
+            >
+              <h3>Flaky Tests</h3>
+            </div>
+          </div>
+          <div
+            class="sl-block"
+            data-block-type="text"
+            style="height: auto; width: 320px; left: 480px; top: 570px"
+            data-block-id="c73ab07935700a916820f4be438e1111"
+          >
+            <div
+              class="sl-block-content fragment fade-in-then-semi-out"
+              data-placeholder-tag="p"
+              data-placeholder-text="Text"
+              style="z-index: 11"
+              data-fragment-index="1"
+            >
+              <h3>Takes too long</h3>
+            </div>
+          </div>
+          <div
+            class="sl-block"
+            data-block-type="text"
+            style="height: auto; width: 320px; left: 800px; top: 570px"
+            data-block-id="a5b39b6604e3dbe8bef55fb54768209c"
+          >
+            <div
+              class="sl-block-content fragment"
+              data-placeholder-tag="p"
+              data-placeholder-text="Text"
+              style="z-index: 12"
+              data-fragment-index="2"
+            >
+              <h3>Timing Issues</h3>
+            </div>
+          </div>
+          <div
+            class="sl-block"
+            data-block-type="image"
+            data-block-id="88482ec1b7f99cd6d794d69f181812a2"
+            style="
+              width: 320px;
+              height: 320px;
+              left: 160px;
+              top: 180px;
+              min-width: 1px;
+              min-height: 1px;
+            "
+          >
+            <div
+              class="sl-block-content fragment fade-in-then-semi-out"
+              style="z-index: 13"
+              data-fragment-index="0"
+            >
+              <img
+                data-natural-width="480"
+                data-natural-height="480"
+                style=""
+                data-lazy-loaded=""
+                data-src="end-to-end-testing-with-cypress/c26f7fbbd9db123aa1aff75505664ef7.gif"
+              />
+            </div>
+          </div>
+          <div
+            class="sl-block"
+            data-block-type="image"
+            data-block-id="a376bc7cf2b9ddf2cd58f19610b24eb3"
+            style="
+              width: 320px;
+              height: 320px;
+              left: 480px;
+              top: 180px;
+              min-width: 1px;
+              min-height: 1px;
+            "
+          >
+            <div
+              class="sl-block-content fragment fade-in-then-semi-out"
+              style="z-index: 14"
+              data-fragment-index="1"
+            >
+              <img
+                data-natural-width="427"
+                data-natural-height="427"
+                style=""
+                data-lazy-loaded=""
+                data-src="end-to-end-testing-with-cypress/6a73c19660d10e461742699b0d10c0fc.gif"
+              />
+            </div>
+          </div>
+          <div
+            class="sl-block"
+            data-block-type="image"
+            data-block-id="1740b04a284c31df5192cbe99a1ef799"
+            style="
+              width: 319.8px;
+              height: 319.8px;
+              left: 800.2px;
+              top: 180.2px;
+              min-width: 1px;
+              min-height: 1px;
+            "
+          >
+            <div
+              class="sl-block-content fragment"
+              style="z-index: 15"
+              data-fragment-index="2"
+            >
+              <img
+                data-natural-width="540"
+                data-natural-height="540"
+                style=""
+                data-lazy-loaded=""
+                data-src="end-to-end-testing-with-cypress/fa1b6ef8c9f0f14db811c2f5b271f900.gif"
+              />
+            </div>
+          </div>
+        </section>
+        <section data-id="c26fbac840b94653b63605da79557bc5">
+          <div
+            class="sl-block"
+            data-block-type="image"
+            data-block-id="a5b925ff0a9d14be51e20bb576c525ce"
+            style="
+              width: 366.012px;
+              height: 530px;
+              left: 240px;
+              top: 110px;
+              min-width: 1px;
+              min-height: 1px;
+            "
+          >
+            <div class="sl-block-content" style="z-index: 10">
+              <img
+                style="left: -28px; top: 0px; width: 424px; height: 530px"
+                data-natural-width="1920"
+                data-natural-height="2400"
+                data-crop-x="0.064918"
+                data-crop-y="0"
+                data-crop-width="0.863236"
+                data-crop-height="1"
+                data-lazy-loaded=""
+                data-src="end-to-end-testing-with-cypress/a63981b13e9f3304048dd5ccdbc678eb"
+              />
+            </div>
+          </div>
+          <div
+            class="sl-block"
+            data-block-type="image"
+            data-block-id="7d3df94462fce07f100c6ff512630050"
+            style="
+              width: 353.825px;
+              height: 530px;
+              left: 686.175px;
+              top: 110px;
+              min-width: 1px;
+              min-height: 1px;
+            "
+          >
+            <div class="sl-block-content" style="z-index: 11">
+              <img
+                style=""
+                data-natural-width="1920"
+                data-natural-height="2876"
+                data-lazy-loaded=""
+                data-src="end-to-end-testing-with-cypress/1ac5b67179dae6bbdb23c515bba4d78a"
+              />
+            </div>
+          </div>
+        </section>
+        <section data-id="74ac3b1cfeec2342ad185eff2335aca7">
+          <div
+            class="sl-block"
+            data-block-type="image"
+            style="
+              width: 478.67px;
+              height: 720px;
+              left: 399.978px;
+              top: 0px;
+              min-width: 1px;
+              min-height: 1px;
+            "
+            data-block-id="5ff3214859d5242b61e58fd51b00257e"
+          >
+            <div
+              class="sl-block-content fragment semi-fade-out"
+              style="z-index: 10"
+              data-fragment-index="0"
+            >
+              <img
+                data-natural-width="1920"
+                data-natural-height="2888"
+                style=""
+                data-lazy-loaded=""
+                data-src="end-to-end-testing-with-cypress/878a18af73695036b5dbc3b64432d1cb"
+              />
+            </div>
+          </div>
+
+          <div
+            class="sl-block"
+            data-block-type="text"
+            style="height: auto; width: 166px; left: 954px; top: 671px"
+            data-block-id="e73477fd5f7a5326d1a10ae3694bfaf5"
+          >
+            <div
+              class="sl-block-content"
+              data-placeholder-tag="p"
+              data-placeholder-text="Text"
+              style="z-index: 11"
+              dir="ui"
+              data-has-custom-html=""
+            >
+              <p>
+                <span style="font-size: 0.3em"
+                  ><span style="color: rgb(17, 17, 17); text-align: start"
+                    >Photo by </span
+                  ><a
+                    href="https://unsplash.com/photos/Y58Sww9SR1c?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText"
+                    target="_blank"
+                    >Philip Veater</a
+                  ><span style="color: rgb(17, 17, 17); text-align: start"
+                    > on </span
+                  ><a
+                    href="https://unsplash.com/search/photos/lego-help?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText"
+                    target="_blank"
+                    >Unsplash</a
+                  ></span
+                >
+              </p>
+            </div>
+          </div>
+          <div
+            class="sl-block"
+            data-block-type="image"
+            data-block-id="49803f58f843632e329cbc4b2884ccdb"
+            style="
+              width: 418px;
+              height: 140px;
+              left: 430.313px;
+              top: 76px;
+              min-width: 1px;
+              min-height: 1px;
+            "
+          >
+            <div
+              class="sl-block-content fragment"
+              style="z-index: 12"
+              data-fragment-index="0"
+            >
+              <img
+                style=""
+                data-natural-width="418"
+                data-natural-height="140"
+                data-lazy-loaded=""
+                data-src="end-to-end-testing-with-cypress/e372f3235085416cd66a053b441068d3.png"
+              />
+            </div>
+          </div>
+        </section>
+        <section data-id="49c6a08d690393b1414e07e9377fe8c3">
+          <div
+            class="sl-block"
+            data-block-type="text"
+            style="width: 806px; left: 237px; top: 276px; height: auto"
+            data-block-id="3f3e66fdef11c98b28c0f6d9f11d909e"
+          >
+            <div
+              class="sl-block-content"
+              data-placeholder-tag="h1"
+              data-placeholder-text="Title Text"
+              style="z-index: 10"
+            >
+              <h1>Why Cypress?</h1>
+            </div>
+          </div>
+        </section>
+        <section data-id="82d2a8b8d0bb3d30269681127a7c9727">
+          <div
+            class="sl-block"
+            data-block-type="image"
+            data-block-id="bdd7ccb2ab23c7c1c5ed11c4111c6fea"
+            style="
+              width: 552px;
+              height: 720px;
+              left: 373.211px;
+              top: 0px;
+              min-width: 1px;
+              min-height: 1px;
+            "
+          >
+            <div
+              class="sl-block-content fragment fade-out"
+              style="z-index: 10"
+              data-fragment-index="0"
+            >
+              <img
+                data-natural-width="1035"
+                data-natural-height="1350"
+                style=""
+                data-lazy-loaded=""
+                data-src="end-to-end-testing-with-cypress/fe5e32d9b4e7a15e590635730b40ab13.png"
+              />
+            </div>
+          </div>
+          <div
+            class="sl-block"
+            data-block-type="image"
+            data-block-id="f24271a1011e83dd89ff8ad3c37475af"
+            style="
+              width: 550.789px;
+              height: 472.232px;
+              left: 373.211px;
+              top: 123.884px;
+              min-width: 1px;
+              min-height: 1px;
+            "
+          >
+            <div
+              class="sl-block-content fragment"
+              style="z-index: 11"
+              data-fragment-index="0"
+            >
+              <img
+                data-natural-width="1234"
+                data-natural-height="1058"
+                style=""
+                data-lazy-loaded=""
+                data-src="end-to-end-testing-with-cypress/888d5d52e2c367e8f4d93ce55fcd8c28.png"
+              />
+            </div>
+          </div>
+        </section>
+        <section
+          data-id="2a3113c5a1d47b81e0847ff33078c674"
+          data-background-video-muted="true"
+          data-background-video-loop="true"
+          data-background-video="end-to-end-testing-with-cypress/e14196a4497e44f80f8699dac9748198.mp4"
+          data-background-video-thumb="https://s3.amazonaws.com/media-p.slid.es/videos/887386/DYhR50eE/first-test-debugging-30fps_thumb_00001.jpg"
+          data-background-media-id="6925187"
+          data-background-size="contain"
+        >
+          <div
+            class="sl-block"
+            data-block-type="text"
+            style="width: 1439px; left: -78px; top: 636px; height: auto"
+            data-block-id="f714a9f6f1063acf6fb722f313fcbd6b"
+          >
+            <div
+              class="sl-block-content"
+              data-placeholder-tag="h1"
+              data-placeholder-text="Title Text"
+              style="z-index: 10; background-color: rgb(244, 204, 204)"
+            >
+              <h2>Time Travel and Debugging</h2>
+            </div>
+          </div>
+        </section>
+        <section
+          data-id="cdbcb2284a683cc062b3f716c3f681de"
+          data-background-size="contain"
+          data-background-video-muted="true"
+          data-background-video-loop="true"
+          data-background-video="end-to-end-testing-with-cypress/a2bf9264bd271952ba09591912c56def.mp4"
+          data-background-video-thumb="https://s3.amazonaws.com/media-p.slid.es/videos/887386/Ghh04bK8/first-test-30fps_thumb_00001.jpg"
+          data-background-media-id="6925190"
+        >
+          <div
+            class="sl-block"
+            data-block-type="text"
+            style="width: 1439px; left: -78px; top: 636px; height: auto"
+            data-block-id="db4e66a18c8d2357fc2f0270049e3676"
+          >
+            <div
+              class="sl-block-content"
+              data-placeholder-tag="h1"
+              data-placeholder-text="Title Text"
+              style="z-index: 10; background-color: rgb(244, 204, 204)"
+            >
+              <h2>Real Time Reloads</h2>
+            </div>
+          </div>
+        </section>
+        <section
+          data-id="1f2b48eb521c116213b44c9eb881f7c9"
+          data-background-image="end-to-end-testing-with-cypress/45beabd8270eed0cd0574c46f2dec08e.gif"
+          data-background-size="contain"
+        >
+          <div
+            class="sl-block"
+            data-block-type="text"
+            style="width: 1439px; left: -75px; top: 636px; height: auto"
+            data-block-id="9d81013aca9f4fa8db02f93bae650a76"
+          >
+            <div
+              class="sl-block-content"
+              data-placeholder-tag="h1"
+              data-placeholder-text="Title Text"
+              style="z-index: 11; background-color: rgb(244, 204, 204)"
+            >
+              <h2>Automatic Waiting</h2>
+            </div>
+          </div>
+        </section>
+        <section data-id="80f728728fd8d22cb61d00991fcfc713">
+          <div
+            class="sl-block"
+            data-block-type="text"
+            style="width: 1439px; left: -78px; top: 636px; height: auto"
+            data-block-id="a888416b4c19bec5f401d862fd8f8752"
+          >
+            <div
+              class="sl-block-content"
+              data-placeholder-tag="h1"
+              data-placeholder-text="Title Text"
+              style="z-index: 10; background-color: rgb(244, 204, 204)"
+            >
+              <h2>Network Traffic Control</h2>
+            </div>
+          </div>
+          <div
+            class="sl-block"
+            data-block-type="text"
+            data-block-id="062f4031d3437dda220ce301acfe792d"
+            style="height: auto; width: 125px; left: 257.5px; top: 531px"
+          >
+            <div
+              class="sl-block-content"
+              data-placeholder-tag="p"
+              data-placeholder-text="Text"
+              style="z-index: 11"
+            >
+              <h3>Spies</h3>
+            </div>
+          </div>
+          <div
+            class="sl-block"
+            data-block-type="image"
+            data-block-id="d109a896a3ab1bff227a71ef8fa791b3"
+            style="
+              width: 320px;
+              height: 320px;
+              left: 480px;
+              top: 200px;
+              min-width: 1px;
+              min-height: 1px;
+            "
+          >
+            <div class="sl-block-content" style="z-index: 12">
+              <img
+                style=""
+                data-natural-width="480"
+                data-natural-height="480"
+                data-lazy-loaded=""
+                data-src="end-to-end-testing-with-cypress/3ba0909dd24c9a1281a368501ff6eaab.gif"
+              />
+            </div>
+          </div>
+          <div
+            class="sl-block"
+            data-block-type="text"
+            style="height: auto; width: 125px; left: 577.5px; top: 536.5px"
+            data-block-id="b527cc362f0e748cde86df46fbfafd2f"
+          >
+            <div
+              class="sl-block-content"
+              data-placeholder-tag="p"
+              data-placeholder-text="Text"
+              style="z-index: 13"
+            >
+              <h3>Stubs</h3>
+            </div>
+          </div>
+          <div
+            class="sl-block"
+            data-block-type="text"
+            style="height: auto; width: 142.5px; left: 888.75px; top: 531px"
+            data-block-id="2548792d225a4693738630800dd9a127"
+          >
+            <div
+              class="sl-block-content"
+              data-placeholder-tag="p"
+              data-placeholder-text="Text"
+              style="z-index: 14"
+            >
+              <h3>Clocks</h3>
+            </div>
+          </div>
+          <div
+            class="sl-block"
+            data-block-type="image"
+            data-block-id="0dcfab233fb32df21a1806c0a00731e1"
+            style="
+              width: 319.835px;
+              height: 320px;
+              left: 160.249px;
+              top: 200px;
+              min-width: 1px;
+              min-height: 1px;
+            "
+          >
+            <div class="sl-block-content" style="z-index: 15">
+              <img
+                data-natural-width="1920"
+                data-natural-height="1278"
+                style="left: -161px; top: 0px; width: 481px; height: 320px"
+                data-crop-x="0.334719"
+                data-crop-y="0"
+                data-crop-width="0.665281"
+                data-crop-height="1"
+                data-lazy-loaded=""
+                data-src="end-to-end-testing-with-cypress/97127ec3a7b930b890ef9ed3a1412be0"
+              />
+            </div>
+          </div>
+          <div
+            class="sl-block"
+            data-block-type="image"
+            data-block-id="0ee2b4538de9c1e05f559cd413180b71"
+            style="
+              width: 319.964px;
+              height: 320px;
+              left: 800px;
+              top: 200.165px;
+              min-width: 1px;
+              min-height: 1px;
+            "
+          >
+            <div class="sl-block-content" style="z-index: 16">
+              <img
+                style="left: -55px; top: 0px; width: 430px; height: 320px"
+                data-natural-width="1920"
+                data-natural-height="1429"
+                data-crop-x="0.127907"
+                data-crop-y="0"
+                data-crop-width="0.744186"
+                data-crop-height="1"
+                data-lazy-loaded=""
+                data-src="end-to-end-testing-with-cypress/5334ab1cbc9fc0c26791ca43525ba3fb"
+              />
+            </div>
+          </div>
+        </section>
+        <section data-id="876c2a3a840dff9888b0fa5d5e52c95d">
+          <div
+            class="sl-block"
+            data-block-type="text"
+            style="width: 1439px; left: -80px; top: 636px; height: auto"
+            data-block-id="0a490b97dc8fdd5ab43f42ad8cabef1a"
+          >
+            <div
+              class="sl-block-content"
+              data-placeholder-tag="h1"
+              data-placeholder-text="Title Text"
+              style="z-index: 10; background-color: rgb(244, 204, 204)"
+            >
+              <h2>Bundled Tools</h2>
+            </div>
+          </div>
+
+          <div
+            class="sl-block"
+            data-block-type="image"
+            data-block-id="145374474f557409c5887c001a27bee2"
+            style="
+              width: 211.667px;
+              height: 210px;
+              left: 534.166px;
+              top: 80px;
+              min-width: 1px;
+              min-height: 1px;
+            "
+          >
+            <div class="sl-block-content" style="z-index: 11">
+              <img
+                data-natural-width="254"
+                data-natural-height="252"
+                style=""
+                data-lazy-loaded=""
+                data-src="end-to-end-testing-with-cypress/4f4cd28f3bcd4868f1405f85f676dca2.png"
+              />
+            </div>
+          </div>
+          <div
+            class="sl-block"
+            data-block-type="image"
+            data-block-id="194b38034e9a07d66dec1fd55a49f33b"
+            style="
+              width: 212.63px;
+              height: 212.63px;
+              left: 853.685px;
+              top: 77.37px;
+              min-width: 1px;
+              min-height: 1px;
+            "
+          >
+            <div class="sl-block-content" style="z-index: 12">
+              <img
+                data-natural-width="1200"
+                data-natural-height="1200"
+                style=""
+                data-lazy-loaded=""
+                data-src="end-to-end-testing-with-cypress/b43da4802f4c953512de7a07722d42ad.png"
+              />
+            </div>
+          </div>
+          <div
+            class="sl-block"
+            data-block-type="image"
+            data-block-id="f5d6923c30228dce658277504f8034be"
+            style="
+              width: 509.034px;
+              height: 124.475px;
+              left: 557.281px;
+              top: 445.525px;
+              min-width: 1px;
+              min-height: 1px;
+            "
+          >
+            <div class="sl-block-content" style="z-index: 13">
+              <img
+                data-natural-width="1280"
+                data-natural-height="313"
+                style=""
+                data-lazy-loaded=""
+                data-src="end-to-end-testing-with-cypress/0a13d246aed1f823779eb7c1d43a7451.png"
+              />
+            </div>
+          </div>
+          <div
+            class="sl-block"
+            data-block-type="image"
+            data-block-id="4029cec76adedb322e14e4e8b9d1cdf9"
+            style="
+              width: 212.63px;
+              height: 212.63px;
+              left: 213.685px;
+              top: 78.685px;
+              min-width: 1px;
+              min-height: 1px;
+            "
+          >
+            <div class="sl-block-content" style="z-index: 14">
+              <img
+                data-natural-width="200"
+                data-natural-height="200"
+                style=""
+                data-lazy-loaded=""
+                data-src="end-to-end-testing-with-cypress/3587d6ebd1f319fc1c3f0e65a9afd700.png"
+              />
+            </div>
+          </div>
+          <div
+            class="sl-block"
+            data-block-type="image"
+            data-block-id="6aa1da50e9b747b65f9c376c447aeefa"
+            style="
+              width: 192px;
+              height: 192px;
+              left: 288px;
+              top: 404px;
+              min-width: 1px;
+              min-height: 1px;
+            "
+          >
+            <div class="sl-block-content" style="z-index: 15">
+              <img
+                style=""
+                data-natural-width="192"
+                data-natural-height="192"
+                data-lazy-loaded=""
+                data-src="end-to-end-testing-with-cypress/952332316dce48af3cae20c7ea228b71.png"
+              />
+            </div>
+          </div>
+        </section>
+        <section data-id="3cdea6587358767b478617f3f9e415de">
+          <div
+            class="sl-block"
+            data-block-type="text"
+            style="width: 1439px; left: -80px; top: 636px; height: auto"
+            data-block-id="a8d30f1a72f3841c38e819be890281ad"
+          >
+            <div
+              class="sl-block-content"
+              data-placeholder-tag="h1"
+              data-placeholder-text="Title Text"
+              style="z-index: 10; background-color: rgb(244, 204, 204)"
+            >
+              <h2>Screenshots and Videos</h2>
+            </div>
+          </div>
+          <div
+            class="sl-block"
+            data-block-type="image"
+            data-block-id="bc26b2dcc83e3c5773f1dfa02239d1c6"
+            style="
+              width: 480px;
+              height: 360px;
+              left: 160px;
+              top: 150px;
+              min-width: 1px;
+              min-height: 1px;
+            "
+          >
+            <div class="sl-block-content" style="z-index: 11">
+              <img
+                data-natural-width="1920"
+                data-natural-height="1440"
+                style=""
+                data-lazy-loaded=""
+                data-src="end-to-end-testing-with-cypress/63f42e9af74ddb7ed7bf6500b3f5f5c1"
+              />
+            </div>
+          </div>
+          <div
+            class="sl-block"
+            data-block-type="image"
+            data-block-id="c35e3bab677cc25cfde586347711cc5c"
+            style="
+              width: 480px;
+              height: 360.33px;
+              left: 639.5px;
+              top: 150px;
+              min-width: 1px;
+              min-height: 1px;
+            "
+          >
+            <div class="sl-block-content" style="z-index: 12">
+              <img
+                style="left: 0px; top: 0px; width: 533px; height: 360px"
+                data-natural-width="1920"
+                data-natural-height="1298"
+                data-crop-x="0"
+                data-crop-y="0"
+                data-crop-width="0.900563"
+                data-crop-height="1"
+                data-lazy-loaded=""
+                data-src="end-to-end-testing-with-cypress/ed60bce5dab43facea0f505250f2d1d7"
+              />
+            </div>
+          </div>
+        </section>
+        <section data-id="56080c53060c9f0cbe4774cbe920145b">
+          <div
+            class="sl-block"
+            data-block-type="code"
+            data-block-id="af2006c4658ec1fde13cab5b0b85cdda"
+            style="
+              width: 912.184px;
+              height: 75.9251px;
+              left: 183.908px;
+              top: 322.037px;
+            "
+          >
+            <div
+              class="sl-block-content notranslate"
+              data-highlight-theme="monokai"
+              data-code-frame="none"
+              style="z-index: 10; font-size: 300%"
+            >
+              <pre><code>npm install cypress --save-dev</code></pre>
+            </div>
+          </div>
+        </section>
+        <section data-id="8709febffd7f0033407193ec412a5c72">
+          <div
+            class="sl-block"
+            data-block-type="text"
+            data-block-id="5f14c056589773f84892a07a7304f859"
+            style="height: auto; width: 960px; left: 160px; top: 154.5px"
+          >
+            <div
+              class="sl-block-content"
+              data-placeholder-tag="p"
+              data-placeholder-text="Text"
+              style="
+                z-index: 10;
+                line-height: 1.95;
+                font-size: 125%;
+                border-width: 1px;
+              "
+              data-has-line-height=""
+            >
+              <ul>
+                <li>
+                  <p>📄 <strong>cypress.json</strong> - all Cypress settings</p>
+                </li>
+                <li class="fragment" data-fragment-index="0">
+                  <p>
+                    📁 <strong>cypress/integration</strong> - test files (specs)
+                  </p>
+                </li>
+                <li class="fragment" data-fragment-index="1">
+                  <p>
+                    <span
+                      style="
+                        color: rgb(17, 17, 17);
+                        font-size: 37.5px;
+                        text-align: left;
+                      "
+                      >📁 </span
+                    ><strong>cypress/fixtures</strong> - mock data
+                  </p>
+                </li>
+                <li class="fragment" data-fragment-index="2">
+                  <p>
+                    <span
+                      style="
+                        color: rgb(17, 17, 17);
+                        font-size: 37.5px;
+                        text-align: left;
+                      "
+                      >📁 </span
+                    ><strong>cypress/plugins</strong> - extending Cypress
+                  </p>
+                </li>
+                <li class="fragment" data-fragment-index="3">
+                  <p>
+                    <span
+                      style="
+                        color: rgb(17, 17, 17);
+                        font-size: 37.5px;
+                        text-align: left;
+                      "
+                      >📁 </span
+                    ><strong>cypress/support</strong> - shared commands,
+                    utilities
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section data-id="75adc61cd641b064a76f6a1a586c6fc5">
+          <div
+            class="sl-block"
+            data-block-type="code"
+            style="
+              width: 494.05px;
+              height: 71.7181px;
+              left: 385.95px;
+              top: 216px;
+            "
+            data-block-id="5e2e18295f7316423002240d7bde4be2"
+          >
+            <div
+              class="sl-block-content notranslate"
+              data-highlight-theme="monokai"
+              data-code-frame="none"
+              style="z-index: 10; font-size: 300%"
+            >
+              <pre><code>npx cypress open</code></pre>
+            </div>
+          </div>
+          <div
+            class="sl-block"
+            data-block-type="code"
+            style="
+              width: 494.05px;
+              height: 71.7181px;
+              left: 385.95px;
+              top: 432px;
+            "
+            data-block-id="8aa6bffb03440e852954af5a22e37259"
+          >
+            <div
+              class="sl-block-content notranslate"
+              data-highlight-theme="monokai"
+              data-code-frame="none"
+              style="z-index: 11; font-size: 300%"
+            >
+              <pre><code>npx cypress run</code></pre>
+            </div>
+          </div>
+        </section>
+        <section data-id="e38fc6f60d82b5b4c82bc8492bad80bc">
+          <div
+            class="sl-block"
+            data-block-type="image"
+            data-block-id="334250ae1aab0c01b00958884bc41626"
+            style="
+              width: 1046.09px;
+              height: 720px;
+              left: 116.955px;
+              top: 0px;
+              min-width: 1px;
+              min-height: 1px;
+            "
+          >
+            <div class="sl-block-content" style="z-index: 10">
+              <img
+                data-natural-width="1604"
+                data-natural-height="1104"
+                style=""
+                data-lazy-loaded=""
+                data-src="end-to-end-testing-with-cypress/0d72ab819d6c870d625c5442d297f55c.png"
+              />
+            </div>
+          </div>
+        </section>
+        <section data-id="6348fcfc312f5449014a78eda00b8944">
+          <div
+            class="sl-block"
+            data-block-type="text"
+            data-block-id="f5977c56e43a255238f2b56d4da336f3"
+            style="height: auto; width: 668px; left: 306px; top: 53px"
+          >
+            <div
+              class="sl-block-content"
+              data-placeholder-tag="p"
+              data-placeholder-text="Text"
+              style="z-index: 10"
+            >
+              <h1>Let's get started</h1>
+            </div>
+          </div>
+          <div
+            class="sl-block"
+            data-block-type="image"
+            data-block-id="eedd9d996906806aa2940f001c411795"
+            style="
+              width: 480px;
+              height: 331.014px;
+              left: 160px;
+              top: 194.493px;
+              min-width: 1px;
+              min-height: 1px;
+            "
+          >
+            <div class="sl-block-content" style="z-index: 12">
+              <img
+                style=""
+                data-natural-width="1598"
+                data-natural-height="1102"
+                data-lazy-loaded=""
+                data-src="end-to-end-testing-with-cypress/4e0bd4e25f0eb03bf1e41d240f38edde.png"
+              />
+            </div>
+          </div>
+          <div
+            class="sl-block"
+            data-block-type="image"
+            data-block-id="3896a20f4ee3bcee99f0d08c304b696c"
+            style="
+              width: 482px;
+              height: 331.144px;
+              left: 638px;
+              top: 194.493px;
+              min-width: 1px;
+              min-height: 1px;
+            "
+          >
+            <div class="sl-block-content" style="z-index: 11">
+              <img
+                data-natural-width="1776"
+                data-natural-height="826"
+                style="left: -101px; top: 0px; width: 712px; height: 331px"
+                data-crop-x="0.141854"
+                data-crop-y="0"
+                data-crop-width="0.676966"
+                data-crop-height="1"
+                data-lazy-loaded=""
+                data-src="end-to-end-testing-with-cypress/f4b0a89860729d932b2a76620f779679.png"
+              />
+            </div>
+          </div>
+          <div
+            class="sl-block"
+            data-block-type="image"
+            style="
+              width: 407.883px;
+              height: 184.363px;
+              left: 436.058px;
+              top: 535.637px;
+              min-width: 1px;
+              min-height: 1px;
+            "
+            data-block-id="506322684f064d432dc5452a680a2068"
+          >
+            <div
+              class="sl-block-content fragment"
+              style="z-index: 13"
+              data-fragment-index="0"
+            >
+              <img
+                style=""
+                data-natural-width="500"
+                data-natural-height="226"
+                data-lazy-loaded=""
+                data-src="end-to-end-testing-with-cypress/027cfb47168db6a1a721cb3694f3bdf3.gif"
+              />
+            </div>
+          </div>
+        </section>
+        <section data-id="44b4cb62c74c9033c9f54da33400fef8">
+          <div
+            class="sl-block"
+            data-block-type="text"
+            style="width: 806px; left: 237px; top: 31.5px; height: auto"
+            data-block-id="4def401cd02fb1361a618e1959b16878"
+          >
+            <div
+              class="sl-block-content"
+              data-placeholder-tag="h1"
+              data-placeholder-text="Title Text"
+              style="z-index: 10"
+            >
+              <h1>Our First Test...</h1>
+            </div>
+          </div>
+          <div
+            class="sl-block"
+            data-block-type="code"
+            data-block-id="04d6f04dfdf4193091eb428466602904"
+            style="width: 979px; height: 576px; left: 150.5px; top: 144px"
+          >
+            <div
+              class="sl-block-content notranslate"
+              data-highlight-theme="monokai"
+              data-code-frame="none"
+              style="z-index: 11; font-size: 150%"
+            >
+              <pre
+                class="javascript"
+              ><code data-line-numbers="4,19|5,18|6|8-10|12-13|15-17">/// &lt;reference types="cypress" /&gt;
+// @ts-check
+
+describe('My first test', () =&gt; {
+  it('the home page loads', () =&gt; {
+    cy.visit('localhost:3000')
+
+    // use ("selector", "text") arguments 
+    // to "cy.contains"
+    cy.contains('h1', 'todos')
+
+    // or can use regular expression
+    cy.contains('h1', /^todos$/)
+
+    // also good practice is to use data 
+    // attributes specifically for testing
+    cy.contains('[data-cy=app-title]', 'todos')
+  })
+})</code></pre>
+            </div>
+          </div>
+        </section>
+        <section data-id="a74f792e519d6eb3b7d12c142caf7e58">
+          <div
+            class="sl-block"
+            data-block-type="text"
+            style="width: 806px; left: 237px; top: 31.5px; height: auto"
+            data-block-id="f306f52c4e40041199efc6de9544c89d"
+          >
+            <div
+              class="sl-block-content"
+              data-placeholder-tag="h1"
+              data-placeholder-text="Title Text"
+              style="z-index: 10"
+            >
+              <h1>Now, let's add items</h1>
+            </div>
+          </div>
+          <div
+            class="sl-block"
+            data-block-type="code"
+            data-block-id="50da8da4262965836f3a2a437848a0ac"
+            style="width: 1120px; height: 360px; left: 80px; top: 252px"
+          >
+            <div
+              class="sl-block-content notranslate"
+              data-highlight-theme="monokai"
+              data-code-frame="none"
+              style="z-index: 11; font-size: 172%"
+            >
+              <pre
+                class="javascript"
+              ><code data-line-numbers="|4|5|6|7-8">/// &lt;reference types="cypress" /&gt;
+describe('Adding items to the todo list', () =&gt; {
+  it('adds two items', () =&gt; {
+    cy.visit('localhost:3000')
+    cy.get('.new-todo').type('first item{enter}')
+    cy.contains('li.todo', 'first item').should('be.visible')
+    cy.get('.new-todo').type('second item{enter}')
+    cy.contains('li.todo', 'second item').should('be.visible')
+  })
+})
+</code></pre>
+            </div>
+          </div>
+        </section>
+        <section data-id="d29e5b040ee8ce48e6aab031aeb14ea4">
+          <div
+            class="sl-block"
+            data-block-type="text"
+            style="width: 806px; left: 237px; top: 43px; height: auto"
+            data-block-id="ecaf56a5728e29c886993528a529814a"
+          >
+            <div
+              class="sl-block-content"
+              data-placeholder-tag="h1"
+              data-placeholder-text="Title Text"
+              style="z-index: 10"
+            >
+              <h2>Refactor Opportunity 💡</h2>
+            </div>
+          </div>
+          <div
+            class="sl-block"
+            data-block-type="code"
+            style="width: 1114px; height: 446.323px; left: 82px; top: 208.839px"
+            data-block-id="7cb422b6e61802d30e30002aa882a42e"
+          >
+            <div
+              class="sl-block-content notranslate"
+              data-highlight-theme="monokai"
+              data-code-frame="none"
+              style="z-index: 11; font-size: 170%"
+            >
+              <pre
+                class="javascript"
+              ><code data-line-numbers="|3-5">/// &lt;reference types="cypress" /&gt;
+describe('Adding items to the todo list', () =&gt; {
+  beforeEach(() =&gt; {
+    cy.visit('localhost:3000')
+  })
+  
+  it('adds two items', () =&gt; {
+    cy.get('.new-todo').type('first item{enter}')
+    cy.contains('li.todo', 'first item').should('be.visible')
+    cy.get('.new-todo').type('second item{enter}')
+    cy.contains('li.todo', 'second item').should('be.visible')
+  })
+})
+</code></pre>
+            </div>
+          </div>
+        </section>
+        <section data-id="255018d68d9ec41b2c844449aa050931">
+          <div
+            class="sl-block"
+            data-block-type="video"
+            data-block-id="965e7c2dade44198ec7b4639e6ae97c7"
+            style="
+              min-width: 30px;
+              min-height: 30px;
+              width: 1280px;
+              height: 720px;
+              left: 0px;
+              top: 0px;
+            "
+          >
+            <div
+              class="sl-block-content"
+              style="z-index: 10"
+              data-media-id="6921021"
+              data-video-thumb="end-to-end-testing-with-cypress/2b640fd3819ce98b83d03ea89360c699.jpg"
+            >
+              <video
+                playsinline=""
+                poster="end-to-end-testing-with-cypress/2b640fd3819ce98b83d03ea89360c699.jpg"
+                data-autoplay=""
+                data-paused-by-reveal=""
+                data-lazy-loaded=""
+                controls=""
+                data-src="end-to-end-testing-with-cypress/ed83936b41a303e8d86452332971587b.mp4"
+              ></video>
+            </div>
+          </div>
+        </section>
+        <section data-id="43691f9ba7934e40b48b274efb8d5f0c">
+          <div
+            class="sl-block"
+            data-block-type="code"
+            style="width: 960px; height: 111.857px; left: 160px; top: 304.072px"
+            data-block-id="46a6d68576893daf362ec026598a7a53"
+          >
+            <div
+              class="sl-block-content notranslate"
+              data-highlight-theme="monokai"
+              data-code-frame="none"
+              style="z-index: 10; font-size: 170%"
+            >
+              <pre
+                class="javascript"
+              ><code data-line-numbers="">const addItem = text =&gt; {
+  cy.get('.new-todo').type(`${text}{enter}`)
+}</code></pre>
+            </div>
+          </div>
+          <div
+            class="sl-block"
+            data-block-type="text"
+            style="width: 806px; left: 237px; top: 43px; height: auto"
+            data-block-id="2517df1140c6b7a5b22c8d01cc8b4d52"
+          >
+            <div
+              class="sl-block-content"
+              data-placeholder-tag="h1"
+              data-placeholder-text="Title Text"
+              style="z-index: 11"
+            >
+              <h2>Refactor Opportunity 💡</h2>
+            </div>
+          </div>
+        </section>
+        <section data-id="f923dabbdefac5ec9ff9dee0544345e1">
+          <div
+            class="sl-block"
+            data-block-type="text"
+            style="width: 806px; left: 237px; top: 31.5px; height: auto"
+            data-block-id="46dc28b8bca7e85cdd2ef22dcc09e075"
+          >
+            <div
+              class="sl-block-content"
+              data-placeholder-tag="h1"
+              data-placeholder-text="Title Text"
+              style="z-index: 10"
+            >
+              <h1>Removing items</h1>
+            </div>
+          </div>
+          <div
+            class="sl-block"
+            data-block-type="code"
+            style="width: 971px; height: 560px; left: 154.5px; top: 152px"
+            data-block-id="2b56ea8be6c98261501cd513019eb3e7"
+          >
+            <div
+              class="sl-block-content notranslate"
+              data-highlight-theme="monokai"
+              data-code-frame="none"
+              style="z-index: 11; font-size: 170%"
+            >
+              <pre
+                class="javascript"
+              ><code data-line-numbers="">it('can delete an item', () =&gt; {
+  // adds a few items
+  addItem('simple')
+  addItem('hard')
+  // deletes the first item
+  cy.contains('li.todo', 'simple')
+    .should('exist')
+    .find('.destroy')
+  // use force: true because we don't want to hover
+    .click({ force: true })
+
+  // confirm the deleted item is gone from the dom
+  cy.contains('li.todo', 'simple').should('not.exist')
+  // confirm the other item still exists
+  cy.contains('li.todo', 'hard').should('exist')
+})</code></pre>
+            </div>
+          </div>
+        </section>
+        <section data-id="580bd26ef424aaa8ca2292ac22b1b449">
+          <div
+            class="sl-block"
+            data-block-type="video"
+            data-block-id="a5afd5560892e4075973fe9c06310925"
+            style="
+              min-width: 30px;
+              min-height: 30px;
+              width: 1280px;
+              height: 720px;
+              left: 0px;
+              top: 0px;
+            "
+          >
+            <div
+              class="sl-block-content"
+              style="z-index: 10"
+              data-media-id="6921022"
+              data-video-thumb="end-to-end-testing-with-cypress/21751be8bab94e341462645cfeb78071.jpg"
+            >
+              <video
+                playsinline=""
+                controls="controls"
+                poster="end-to-end-testing-with-cypress/21751be8bab94e341462645cfeb78071.jpg"
+                data-autoplay=""
+                data-paused-by-reveal=""
+                data-lazy-loaded=""
+                data-src="end-to-end-testing-with-cypress/f9a13af70798bbdd91cf8c94ca5f599c.mp4"
+              ></video>
+            </div>
+          </div>
+        </section>
+        <section data-id="fbf506ab8bc43f482d65a6d4d782ad6e">
+          <div
+            class="sl-block"
+            data-block-type="code"
+            style="width: 960px; height: 111.857px; left: 160px; top: 304.072px"
+            data-block-id="f7fb63841e11d78336222b74a1cd4774"
+          >
+            <div
+              class="sl-block-content notranslate"
+              data-highlight-theme="monokai"
+              data-code-frame="none"
+              style="z-index: 10; font-size: 170%"
+            >
+              <pre class="javascript"><code data-line-numbers="">{
+  "baseUrl": "http://localhost:3000",
+}</code></pre>
+            </div>
+          </div>
+          <div
+            class="sl-block"
+            data-block-type="text"
+            style="width: 806px; left: 237px; top: 43px; height: auto"
+            data-block-id="0ed446ef24376de47f62c68d6fdf3644"
+          >
+            <div
+              class="sl-block-content"
+              data-placeholder-tag="h1"
+              data-placeholder-text="Title Text"
+              style="z-index: 11"
+            >
+              <h2>Refactor Opportunity 💡</h2>
+            </div>
+          </div>
+          <div
+            class="sl-block"
+            data-block-type="code"
+            style="width: 960px; height: 110.857px; left: 160px; top: 537.143px"
+            data-block-id="4b88593d8ed3d3809eb362e06f9c23d6"
+          >
+            <div
+              class="sl-block-content notranslate fragment"
+              data-highlight-theme="monokai"
+              data-code-frame="none"
+              style="z-index: 12; font-size: 170%"
+              data-fragment-index="0"
+            >
+              <pre
+                class="javascript"
+              ><code data-line-numbers="">beforeEach(() =&gt; {
+  cy.visit('/')
+})</code></pre>
+            </div>
+          </div>
+          <div
+            class="sl-block"
+            data-block-type="text"
+            data-block-id="dbde6cac63d26233379d167474368b01"
+            style="height: auto; width: 600px; left: 340px; top: 220px"
+          >
+            <div
+              class="sl-block-content"
+              data-placeholder-tag="p"
+              data-placeholder-text="Text"
+              style="z-index: 13"
+            >
+              <h3>cypress.json</h3>
+            </div>
+          </div>
+          <div
+            class="sl-block"
+            data-block-type="text"
+            style="height: auto; width: 600px; left: 330.734px; top: 450px"
+            data-block-id="ad6371b0329eaf5ef9ad62f3ed73928b"
+          >
+            <div
+              class="sl-block-content fragment"
+              data-placeholder-tag="p"
+              data-placeholder-text="Text"
+              style="z-index: 14"
+              data-fragment-index="0"
+            >
+              <h3>*.spec.js</h3>
+            </div>
+          </div>
+        </section>
+        <section data-id="da553c97eae0ad504d2439d1ed2183b5">
+          <div
+            class="sl-block"
+            data-block-type="text"
+            style="width: 806px; left: 237px; top: 80px; height: auto"
+            data-block-id="33669d9d588ea2e69b705fd2a994ff18"
+          >
+            <div
+              class="sl-block-content"
+              data-placeholder-tag="h1"
+              data-placeholder-text="Title Text"
+              style="z-index: 10"
+            >
+              <h1>Async Requests???</h1>
+            </div>
+          </div>
+          <div
+            class="sl-block"
+            data-block-type="image"
+            style="
+              width: 284px;
+              height: 284px;
+              left: 498px;
+              top: 220px;
+              min-width: 1px;
+              min-height: 1px;
+            "
+            data-block-id="8dcce5d0f9113828316a55119b8c72e7"
+          >
+            <div class="sl-block-content" style="z-index: 11">
+              <img
+                style=""
+                data-natural-width="1080"
+                data-natural-height="1080"
+                data-lazy-loaded=""
+                data-src="end-to-end-testing-with-cypress/234e2679966106b4abd2bfb970f75475.gif"
+              />
+            </div>
+          </div>
+          <div
+            class="sl-block"
+            data-block-type="text"
+            style="width: 806px; left: 237px; top: 570px; height: auto"
+            data-block-id="d29828f754d70e74e3edf7f0eea49e3c"
+          >
+            <div
+              class="sl-block-content fragment"
+              data-placeholder-tag="h1"
+              data-placeholder-text="Title Text"
+              style="z-index: 12"
+              data-fragment-index="0"
+            >
+              <h1>No Problem...</h1>
+            </div>
+          </div>
+        </section>
+        <section data-id="4278f166caf178247968781eb4b6d15f">
+          <div
+            class="sl-block"
+            data-block-type="text"
+            style="width: 806px; left: 237px; top: 31.5px; height: auto"
+            data-block-id="07f4b5312f979c64edd3197ea9ca182a"
+          >
+            <div
+              class="sl-block-content"
+              data-placeholder-tag="h1"
+              data-placeholder-text="Title Text"
+              style="z-index: 10"
+            >
+              <h1>Let's wait...</h1>
+            </div>
+          </div>
+          <div
+            class="sl-block"
+            data-block-type="code"
+            data-block-id="c691efc97379fcbbe0f73ca7fad97fc7"
+            style="width: 1070px; height: 212px; left: 105px; top: 254px"
+          >
+            <div
+              class="sl-block-content notranslate"
+              data-highlight-theme="monokai"
+              data-code-frame="none"
+              style="z-index: 11; font-size: 170%"
+            >
+              <pre
+                class="javascript"
+              ><code data-line-numbers="">it('starts with zero items (waits)', () =&gt; {
+  cy.visit('/')
+  /* eslint-disable-next-line cypress/no-unnecessary-waiting */
+  cy.wait(1000)
+  cy.get('li.todo').should('have.length', 0)
+})</code></pre>
+            </div>
+          </div>
+          <div
+            class="sl-block"
+            data-block-type="text"
+            data-block-id="dde71a5bf5e1bffe710dc491af583fc3"
+            style="height: auto; width: 714px; left: 283px; top: 520px"
+          >
+            <div
+              class="sl-block-content fragment"
+              data-placeholder-tag="p"
+              data-placeholder-text="Text"
+              style="z-index: 12"
+              data-fragment-index="0"
+            >
+              <h3>But, <strong>wait</strong>...</h3>
+            </div>
+          </div>
+          <div
+            class="sl-block"
+            data-block-type="text"
+            style="height: auto; width: 714px; left: 283px; top: 590px"
+            data-block-id="2942cd5c632ce7cec5eb473f40e54a67"
+          >
+            <div
+              class="sl-block-content fragment"
+              data-placeholder-tag="p"
+              data-placeholder-text="Text"
+              style="z-index: 13"
+              data-fragment-index="1"
+            >
+              <h3>There is a better way!</h3>
+            </div>
+          </div>
+        </section>
+        <section data-id="7525bcf42ca7449a87edc7cfd11fef5b">
+          <div
+            class="sl-block"
+            data-block-type="text"
+            style="width: 806px; left: 237px; top: 0px; height: auto"
+            data-block-id="d21e5454c5bfbbe7ea876689a192e4bb"
+          >
+            <div
+              class="sl-block-content"
+              data-placeholder-tag="h1"
+              data-placeholder-text="Title Text"
+              style="z-index: 10"
+            >
+              <h2><span style="font-size: 1em">Using Spies</span></h2>
+            </div>
+          </div>
+          <div
+            class="sl-block"
+            data-block-type="code"
+            style="width: 1040px; height: 638px; left: 120px; top: 82px"
+            data-block-id="45366c5e24c1e2cff51c9a0d5fca77ef"
+          >
+            <div
+              class="sl-block-content notranslate"
+              data-highlight-theme="monokai"
+              data-code-frame="none"
+              style="z-index: 11; font-size: 170%"
+            >
+              <pre
+                class="javascript"
+              ><code data-line-numbers="|5|6|7|8|">it('starts with zero items', () =&gt; {
+  // start Cypress network server
+  // spy on route `GET /todos`
+  // THEN visit the page
+  cy.server()
+  cy.route('GET', '/todos').as('todos')
+  cy.visit('/')
+  cy.wait('@todos') // wait for `GET /todos` response
+    // inspect the server's response
+    .its('response.body')
+    .should('have.length', 0)
+  // then check the DOM
+  // note that we don't have to use 
+  // "cy.wait(...).then(...)"
+  // because all Cypress commands are flattened 
+  // into a single chain automatically. 
+  // Thus just write "cy.wait(); cy.get();" naturally
+  cy.get('li.todo').should('have.length', 0)
+})</code></pre>
+            </div>
+          </div>
+        </section>
+        <section data-id="d0c759df8441be448acaa175a1a26b77">
+          <div
+            class="sl-block"
+            data-block-type="text"
+            style="width: 806px; left: 237px; top: 43px; height: auto"
+            data-block-id="e7e63d9df2dfc41216a1120371729cea"
+          >
+            <div
+              class="sl-block-content"
+              data-placeholder-tag="h1"
+              data-placeholder-text="Title Text"
+              style="z-index: 10"
+            >
+              <h1>Using Stubs</h1>
+            </div>
+          </div>
+          <div
+            class="sl-block"
+            data-block-type="code"
+            style="
+              width: 1040px;
+              height: 485.448px;
+              left: 121px;
+              top: 162.552px;
+            "
+            data-block-id="126df36a416ae48c9fedd20a201c989f"
+          >
+            <div
+              class="sl-block-content notranslate"
+              data-highlight-theme="monokai"
+              data-code-frame="none"
+              style="z-index: 11; font-size: 170%"
+            >
+              <pre
+                class="javascript"
+              ><code data-line-numbers="|6">it('starts with zero items (stubbed response)', () =&gt; {
+  // start Cypress network server
+  // spy on route `GET /todos`
+  // THEN visit the page
+  cy.server()
+  cy.route('GET', '/todos', []).as('todos')
+  cy.visit('/')
+  cy.wait('@todos') // wait for `GET /todos` response
+    // inspect the server's response
+    .its('response.body')
+    .should('have.length', 0)
+  // then check the DOM
+  cy.get('li.todo').should('have.length', 0)
+})</code></pre>
+            </div>
+          </div>
+        </section>
+        <section data-id="cdb7aa573e4cb6b60317845604f5b525">
+          <div
+            class="sl-block"
+            data-block-type="text"
+            style="width: 806px; left: 237px; top: 43px; height: auto"
+            data-block-id="fd7c9f4ff2d17510ca9732931d2a988c"
+          >
+            <div
+              class="sl-block-content"
+              data-placeholder-tag="h1"
+              data-placeholder-text="Title Text"
+              style="z-index: 10"
+            >
+              <h1>Stubs using a fixture</h1>
+            </div>
+          </div>
+          <div
+            class="sl-block"
+            data-block-type="code"
+            style="
+              width: 1103px;
+              height: 483.224px;
+              left: 88.5px;
+              top: 190.388px;
+            "
+            data-block-id="014f75dbb5d370469bc3f7b9ef4f23f2"
+          >
+            <div
+              class="sl-block-content notranslate"
+              data-highlight-theme="monokai"
+              data-code-frame="none"
+              style="z-index: 11; font-size: 170%"
+            >
+              <pre
+                class="javascript"
+              ><code data-line-numbers="|6">it('starts with zero items (fixture)', () =&gt; {
+  // start Cypress network server
+  // stub route `GET /todos`, return data from fixture file
+  // THEN visit the page
+  cy.server()
+  cy.route('GET', '/todos', 'fixture:empty-list').as('todos')
+  cy.visit('/')
+  cy.wait('@todos') // wait for `GET /todos` response
+    // inspect the server's response
+    .its('response.body')
+    .should('have.length', 0)
+  // then check the DOM
+  cy.get('li.todo').should('have.length', 0)
+})</code></pre>
+            </div>
+          </div>
+        </section>
+        <section data-id="b109b4160ee82e6eead57e0f5a342b7f">
+          <div
+            class="sl-block"
+            data-block-type="video"
+            data-block-id="3588ef2479ef8abc07334c8f23319c67"
+            style="
+              min-width: 30px;
+              min-height: 30px;
+              width: 1280px;
+              height: 720px;
+              left: 0px;
+              top: 0px;
+            "
+          >
+            <div
+              class="sl-block-content"
+              style="z-index: 10"
+              data-media-id="6932656"
+              data-video-thumb="end-to-end-testing-with-cypress/005e3f13db2860a4d6f441cc3c78a062.jpg"
+            >
+              <video
+                playsinline=""
+                controls="controls"
+                poster="end-to-end-testing-with-cypress/005e3f13db2860a4d6f441cc3c78a062.jpg"
+                data-autoplay=""
+                data-paused-by-reveal=""
+                data-lazy-loaded=""
+                data-src="end-to-end-testing-with-cypress/02df0522e6814be895dfe4df1d708c5b.mp4"
+              ></video>
+            </div>
+          </div>
+        </section>
+        <section data-id="37c786fb83a001341ef61df8422ceeaf">
+          <div
+            class="sl-block"
+            data-block-type="text"
+            style="width: 806px; left: 237px; top: 43px; height: auto"
+            data-block-id="2b883caf92972f5a05d0c01713518c6e"
+          >
+            <div
+              class="sl-block-content"
+              data-placeholder-tag="h1"
+              data-placeholder-text="Title Text"
+              style="z-index: 10"
+            >
+              <h1>Posting new item</h1>
+            </div>
+          </div>
+          <div
+            class="sl-block"
+            data-block-type="code"
+            style="width: 960px; height: 411.465px; left: 160px; top: 236.535px"
+            data-block-id="523c075698f3eb5bab82c03faf8d1423"
+          >
+            <div
+              class="sl-block-content notranslate"
+              data-highlight-theme="monokai"
+              data-code-frame="none"
+              style="z-index: 11; font-size: 170%"
+            >
+              <pre
+                class="javascript"
+              ><code data-line-numbers="">it('posts new item to the server', () =&gt; {
+  cy.server()
+  cy.route('POST', '/todos').as('new-item')
+  cy.visit('/')
+  cy.get('.new-todo').type('test api{enter}')
+  cy.wait('@new-item')
+    .its('request.body')
+    .should('have.contain', {
+      title: 'test api',
+      completed: false
+    })
+})</code></pre>
+            </div>
+          </div>
+          <div
+            class="sl-block"
+            data-block-type="text"
+            data-block-id="271170e3933e7be9636b7eca74c07011"
+            style="height: auto; width: 600px; left: 340px; top: 150px"
+          >
+            <div
+              class="sl-block-content"
+              data-placeholder-tag="p"
+              data-placeholder-text="Text"
+              style="z-index: 12"
+            >
+              <h3>Request</h3>
+            </div>
+          </div>
+        </section>
+        <section data-id="e21d7aba67146b7baf73def151e09641">
+          <div
+            class="sl-block"
+            data-block-type="text"
+            style="width: 806px; left: 237px; top: 43px; height: auto"
+            data-block-id="5f3cf7cb2f58d202ade2e14608c7a076"
+          >
+            <div
+              class="sl-block-content"
+              data-placeholder-tag="h1"
+              data-placeholder-text="Title Text"
+              style="z-index: 10"
+            >
+              <h1>Posting new item</h1>
+            </div>
+          </div>
+          <div
+            class="sl-block"
+            data-block-type="code"
+            style="width: 960px; height: 410.465px; left: 160px; top: 247.267px"
+            data-block-id="45c43b4ed69eba660e88444aa32a1383"
+          >
+            <div
+              class="sl-block-content notranslate"
+              data-highlight-theme="monokai"
+              data-code-frame="none"
+              style="z-index: 11; font-size: 170%"
+            >
+              <pre
+                class="javascript"
+              ><code data-line-numbers="">it('posts new item to the server response', () =&gt; {
+  cy.server()
+  cy.route('POST', '/todos').as('new-item')
+  cy.visit('/')
+  cy.get('.new-todo').type('test api{enter}')
+  cy.wait('@new-item')
+    .its('response.body')
+    .should('have.contain', {
+      title: 'test api',
+      completed: false
+    })
+})</code></pre>
+            </div>
+          </div>
+          <div
+            class="sl-block"
+            data-block-type="text"
+            style="height: auto; width: 600px; left: 340px; top: 150px"
+            data-block-id="5f80f4ebd5f7e3f7a73a0df4920536de"
+          >
+            <div
+              class="sl-block-content"
+              data-placeholder-tag="p"
+              data-placeholder-text="Text"
+              style="z-index: 12"
+            >
+              <h3>Response</h3>
+            </div>
+          </div>
+        </section>
+        <section data-id="b9b2d49ea2dca6376e8700c5dbc7920c">
+          <div
+            class="sl-block"
+            data-block-type="video"
+            data-block-id="54f0530acba543f801dca02005533631"
+            style="
+              min-width: 30px;
+              min-height: 30px;
+              width: 1280px;
+              height: 720px;
+              left: 0px;
+              top: 0px;
+            "
+          >
+            <div
+              class="sl-block-content"
+              style="z-index: 10"
+              data-media-id="6921731"
+              data-video-thumb="end-to-end-testing-with-cypress/9d5e2286852a973626e8312bd2be0eb2.jpg"
+            >
+              <video
+                playsinline=""
+                controls="controls"
+                poster="end-to-end-testing-with-cypress/9d5e2286852a973626e8312bd2be0eb2.jpg"
+                data-autoplay=""
+                data-paused-by-reveal=""
+                data-lazy-loaded=""
+                data-src="end-to-end-testing-with-cypress/f3b0b0421a2e41291484d5992bc0b10b.mp4"
+              ></video>
+            </div>
+          </div>
+        </section>
+        <section data-id="f606db73c409c70f2b9aad681cbccebf">
+          <div
+            class="sl-block"
+            data-block-type="text"
+            style="width: 806px; left: 237px; top: 17px; height: auto"
+            data-block-id="fc33df85ad89c84a305fbe0d691cd687"
+          >
+            <div
+              class="sl-block-content"
+              data-placeholder-tag="h1"
+              data-placeholder-text="Title Text"
+              style="z-index: 10"
+            >
+              <h2>Test loading element</h2>
+            </div>
+          </div>
+          <div
+            class="sl-block"
+            data-block-type="code"
+            style="width: 1010px; height: 616px; left: 135px; top: 104px"
+            data-block-id="46141e26317942516c01fb65ca9f1b91"
+          >
+            <div
+              class="sl-block-content notranslate"
+              data-highlight-theme="monokai"
+              data-code-frame="none"
+              style="z-index: 11; font-size: 156%"
+            >
+              <pre
+                class="javascript"
+              ><code data-line-numbers="">it('shows loading element', () =&gt; {
+  // delay XHR to "/todos" by a few seconds
+  // and respond with an empty list
+  cy.server()
+  cy.route({
+    url: '/todos',
+    delay: 2000,
+    response: []
+  }).as('loading')
+  cy.visit('/')
+
+  // shows Loading element
+  cy.get('.loading').should('be.visible')
+
+  // wait for the network call to complete
+  cy.wait('@loading')
+
+  // now the Loading element should go away
+  cy.get('.loading').should('not.be.visible')
+})</code></pre>
+            </div>
+          </div>
+        </section>
+        <section data-id="3cc465d9ac6fb51b20272571ea9dac28">
+          <div
+            class="sl-block"
+            data-block-type="video"
+            data-block-id="482c85985335309b54214ebb68f52185"
+            style="
+              min-width: 30px;
+              min-height: 30px;
+              width: 1280px;
+              height: 720px;
+              left: 0px;
+              top: 0px;
+            "
+          >
+            <div
+              class="sl-block-content"
+              style="z-index: 10"
+              data-media-id="6921733"
+              data-video-thumb="end-to-end-testing-with-cypress/af79a3893213252545f80b76fceffaa4.jpg"
+            >
+              <video
+                playsinline=""
+                controls="controls"
+                poster="end-to-end-testing-with-cypress/af79a3893213252545f80b76fceffaa4.jpg"
+                data-autoplay=""
+                data-paused-by-reveal=""
+                data-lazy-loaded=""
+                data-src="end-to-end-testing-with-cypress/3bee350f4a74d6cc05c50c6af17a7d6c.mp4"
+              ></video>
+            </div>
+          </div>
+        </section>
+        <section data-id="bca6dea08f8c1fa411a968a7ca6e9a29">
+          <div
+            class="sl-block"
+            data-block-type="text"
+            style="width: 806px; left: 237px; top: 193px; height: auto"
+            data-block-id="e60799099a86a20cbb89b842e4ed312a"
+          >
+            <div
+              class="sl-block-content"
+              data-placeholder-tag="h1"
+              data-placeholder-text="Title Text"
+              style="z-index: 10"
+            >
+              <h1>Stats please...</h1>
+            </div>
+          </div>
+          <div
+            class="sl-block"
+            data-block-type="image"
+            data-block-id="469bdd90b231e789d235e46682257bb9"
+            style="
+              width: 500px;
+              height: 241px;
+              left: 390px;
+              top: 360px;
+              min-width: 1px;
+              min-height: 1px;
+            "
+          >
+            <div class="sl-block-content" style="z-index: 11">
+              <img
+                data-natural-width="500"
+                data-natural-height="241"
+                style=""
+                data-lazy-loaded=""
+                data-src="end-to-end-testing-with-cypress/415e4607357171e963f3f8ad94616625.gif"
+              />
+            </div>
+          </div>
+        </section>
+        <section data-id="e6dbc6ac5dad6bd30995fd0716e17ef0">
+          <div
+            class="sl-block"
+            data-block-type="image"
+            data-name="image-83a185"
+            data-block-id="d922604935ff9b5069d7ab088ef82c16"
+            style="
+              width: 1280px;
+              height: 551.936px;
+              left: 0px;
+              top: 84.032px;
+              min-width: 1px;
+              min-height: 1px;
+            "
+          >
+            <div class="sl-block-content" style="z-index: 10">
+              <img
+                data-natural-width="2500"
+                data-natural-height="1078"
+                style=""
+                data-lazy-loaded=""
+                data-src="end-to-end-testing-with-cypress/d7fc34b2f4ebf14e34ea257288e613f4.png"
+              />
+            </div>
+          </div>
+        </section>
+        <section data-id="624f505fbaa7f6f1faf4284b82fd6d0d">
+          <div
+            class="sl-block"
+            data-block-type="shape"
+            data-block-id="dbc20d3e34c09c824c463114f7c75b50"
+            style="
+              width: 335.165px;
+              height: 35px;
+              left: 939.5px;
+              top: -3.55271e-15px;
+            "
+          >
+            <div
+              class="sl-block-content fragment"
+              data-shape-type="rect"
+              data-shape-fill-color="rgba(0, 0, 0, 0)"
+              data-shape-stretch="true"
+              style="z-index: 11"
+              data-shape-stroke-color="#e06666"
+              data-shape-stroke-width="4px"
+              data-fragment-index="0"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                version="1.1"
+                width="100%"
+                height="100%"
+                preserveaspectratio="none"
+                viewbox="0 0 335 35"
+              >
+                <defs>
+                  <clippath id="shape-mask-1-1577643060239">
+                    <rect
+                      width="335.165"
+                      height="35"
+                      rx="0"
+                      ry="0"
+                      fill="rgba(0, 0, 0, 0)"
+                      stroke="#e06666"
+                      stroke-width="8"
+                    ></rect>
+                  </clippath>
+                </defs>
+                <rect
+                  width="335.165"
+                  height="35"
+                  rx="0"
+                  ry="0"
+                  class="shape-element"
+                  fill="rgba(0, 0, 0, 0)"
+                  stroke="#e06666"
+                  stroke-width="8"
+                  clip-path="url(#shape-mask-1-1577643060239)"
+                ></rect>
+              </svg>
+            </div>
+          </div>
+          <div
+            class="sl-block"
+            data-block-type="shape"
+            style="width: 133px; height: 27px; left: 196px; top: 45px"
+            data-block-id="54a9b5cde1eb25cbde57f101b1208c3f"
+          >
+            <div
+              class="sl-block-content fragment"
+              data-shape-type="rect"
+              data-shape-fill-color="rgba(0, 0, 0, 0)"
+              data-shape-stretch="true"
+              style="z-index: 12"
+              data-shape-stroke-color="#e06666"
+              data-shape-stroke-width="4px"
+              data-fragment-index="0"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                version="1.1"
+                width="100%"
+                height="100%"
+                preserveaspectratio="none"
+                viewbox="0 0 133 27"
+              >
+                <defs>
+                  <clippath id="shape-mask-2-1577643090525">
+                    <rect
+                      width="133"
+                      height="27"
+                      rx="0"
+                      ry="0"
+                      fill="rgba(0, 0, 0, 0)"
+                      stroke="#e06666"
+                      stroke-width="8"
+                    ></rect>
+                  </clippath>
+                </defs>
+                <rect
+                  width="133"
+                  height="27"
+                  rx="0"
+                  ry="0"
+                  class="shape-element"
+                  fill="rgba(0, 0, 0, 0)"
+                  stroke="#e06666"
+                  stroke-width="8"
+                  clip-path="url(#shape-mask-2-1577643090525)"
+                ></rect>
+              </svg>
+            </div>
+          </div>
+          <div
+            class="sl-block"
+            data-block-type="shape"
+            style="width: 131.5px; height: 30px; left: 880px; top: 626.5px"
+            data-block-id="470cfb396379d9a7223c6b358244b7db"
+          >
+            <div
+              class="sl-block-content fragment"
+              data-shape-type="rect"
+              data-shape-fill-color="rgba(0, 0, 0, 0)"
+              data-shape-stretch="true"
+              style="z-index: 13"
+              data-shape-stroke-color="#e06666"
+              data-shape-stroke-width="4px"
+              data-fragment-index="0"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                version="1.1"
+                width="100%"
+                height="100%"
+                preserveaspectratio="none"
+                viewbox="0 0 132 30"
+              >
+                <defs>
+                  <clippath id="shape-mask-3-1577643106875">
+                    <rect
+                      width="131.5"
+                      height="30"
+                      rx="0"
+                      ry="0"
+                      fill="rgba(0, 0, 0, 0)"
+                      stroke="#e06666"
+                      stroke-width="8"
+                    ></rect>
+                  </clippath>
+                </defs>
+                <rect
+                  width="131.5"
+                  height="30"
+                  rx="0"
+                  ry="0"
+                  class="shape-element"
+                  fill="rgba(0, 0, 0, 0)"
+                  stroke="#e06666"
+                  stroke-width="8"
+                  clip-path="url(#shape-mask-3-1577643106875)"
+                ></rect>
+              </svg>
+            </div>
+          </div>
+          <div
+            class="sl-block"
+            data-block-type="image"
+            data-name="image-aab231"
+            data-block-id="4e4d7152c411b77c24a6cd0c667970ec"
+            style="
+              width: 1269.33px;
+              height: 720px;
+              left: 5.335px;
+              top: 0px;
+              min-width: 1px;
+              min-height: 1px;
+            "
+          >
+            <div class="sl-block-content" style="z-index: 10">
+              <img
+                data-natural-width="2380"
+                data-natural-height="1350"
+                style=""
+                data-lazy-loaded=""
+                data-src="end-to-end-testing-with-cypress/aaa29c0b0c03c236f206b31f3e927947.png"
+              />
+            </div>
+          </div>
+        </section>
+        <section data-id="ba4db7ff175a51ca37924bb165e5d98e">
+          <div
+            class="sl-block"
+            data-block-type="text"
+            style="width: 841px; left: 220px; top: 166px; height: auto"
+            data-block-id="f5785e159164fd841e5358a208ee791c"
+          >
+            <div
+              class="sl-block-content"
+              data-placeholder-tag="h2"
+              data-placeholder-text="Subtitle"
+              style="z-index: 10; color: rgb(0, 0, 0)"
+            >
+              <h1>
+                <em
+                  ><span style="text-align: start"
+                    >“Quality means doing it right even when no one is
+                    looking.”</span
+                  ></em
+                >— Henry Ford
+              </h1>
+            </div>
+          </div>
+        </section>
+        <section data-id="f959d369a644c67a5c97f654e7efec00">
+          <div
+            class="sl-block"
+            data-block-type="text"
+            style="width: 806px; left: 237px; top: 80px; height: auto"
+            data-block-id="29318425c4209573958549522899e9c1"
+          >
+            <div
+              class="sl-block-content"
+              data-placeholder-tag="h1"
+              data-placeholder-text="Title Text"
+              style="z-index: 10"
+            >
+              <h1>@avindrafernando</h1>
+            </div>
+          </div>
+          <div
+            class="sl-block"
+            data-block-type="image"
+            style="
+              width: 328px;
+              height: 436px;
+              left: 476px;
+              top: 220px;
+              min-width: 1px;
+              min-height: 1px;
+            "
+            data-block-id="3432773b087997d29bd114c38a0cd0ed"
+          >
+            <div class="sl-block-content" style="z-index: 11">
+              <img
+                style=""
+                data-natural-width="328"
+                data-natural-height="436"
+                data-lazy-loaded=""
+                data-src="end-to-end-testing-with-cypress/6772c496533b0bad6afb13857b0839c8.gif"
+              />
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <script>
+      var SLConfig = {
+        deck: {
+          id: 1949555,
+          slug: "end-to-end-testing-with-cypress",
+          title: "End to End Testing with Cypress(16:9) - ATO 2020",
+          description: "Avindra Fernando ATO talk",
+          width: 1280,
+          height: 720,
+          margin: 0.05,
+          visibility: "self",
+          published_at: null,
+          sanitize_messages: null,
+          thumbnail_url:
+            "https://s3.amazonaws.com/media-p.slid.es/thumbnails/f706b17d1bdbac26c5b83c30227974c7/thumb.jpg?1577911379",
+          view_count: 0,
+          user: {
+            id: 887386,
+            username: "avindrafernando",
+            name: "Avindra Fernando",
+            description: null,
+            thumbnail_url:
+              "https://lh6.googleusercontent.com/-M3NEgrSsLQE/AAAAAAAAAAI/AAAAAAAAAng/gI6HoGNo1s0/photo.jpg",
+            account_type: "lite",
+            team_id: null,
+            settings: {
+              id: 1364586,
+              present_controls: true,
+              present_upsizing: true,
+              present_pointer: false,
+              present_notes: true,
+              default_deck_tag_id: null,
+            },
+          },
+          background_transition: "slide",
+          transition: "slide",
+          theme_id: null,
+          theme_font: "montserrat",
+          theme_color: "silver-blue",
+          auto_slide_interval: 0,
+          comments_enabled: true,
+          forking_enabled: false,
+          rolling_links: false,
+          center: false,
+          shuffle: false,
+          should_loop: false,
+          share_notes: false,
+          slide_number: false,
+          slide_count: 54,
+          rtl: false,
+          version: 2,
+          collaborative: false,
+          deck_user_editor_limit: 1,
+          data_updated_at: 1602965827357,
+          font_typekit: null,
+          font_google: null,
+          time_limit: null,
+          navigation_mode: "default",
+          upsizing_enabled: true,
+          notes: {},
+        },
+      };
+
+      // Use local fonts
+      SLConfig.fonts_url = "lib/fonts/";
+    </script>
+
+    <script src="lib/reveal.js"></script>
+    <script src="lib/reveal-plugins.js"></script>
+    <script src="lib/offline.js"></script>
+
+    <!-- Initialize the presentation -->
+    <script>
+      Reveal.initialize({
+        width: 1280,
+        height: 720,
+        margin: 0.05,
+
+        hash: true,
+        controls: true,
+        progress: true,
+        mouseWheel: false,
+        showNotes: false,
+        slideNumber: false,
+        fragmentInURL: true,
+
+        autoSlide: 0,
+        autoSlideStoppable: true,
+
+        autoAnimateMatcher: SL.deck.AutoAnimate.matcher,
+
+        center: false,
+        shuffle: false,
+        loop: false,
+        rtl: false,
+        navigationMode: "default",
+
+        transition: "slide",
+        backgroundTransition: "slide",
+
+        highlight: {
+          escapeHTML: false,
+        },
+
+        plugins: [RevealZoom, RevealNotes, RevealMarkdown, RevealHighlight],
+      });
+    </script>
+  </body>
+</html>
